@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-header">
+            <h2>TODO List&nbsp;</h2>
+            <img src="https://th.bing.com/th/id/R.220647e2c3d15bb941f9195ce7147a89?rik=RsnUhA%2bF8NhnMQ&riu=http%3a%2f%2fclipart-library.com%2fimg%2f1731263.jpg&ehk=RkfaOJkj7bsWgMmrzkIEL0yRBhz21fIJQZZFQQLCtRA%3d&risl=&pid=ImgRaw&r=0" alt="" height="50px">
+        </div>
+    
+        <div class="todo-body">
+            <input
+                type="text"
+                id="todoText"
+                class="todo-input"
+                placeholder="Add your items"
+            />
+            <img
+                src="/images/plus.png"
+                alt="+"
+                id="AddUpdateClick"
+                onclick="CreateToDoItems();"
+            />
+            </div>
+           
+            <h5 id="Alert"></h5>
+            <ul id="list-items" class="list-items"></ul>
+            <audio id="completionSound" src="/music/task-comp.mp3"></audio>
+            <br>
+            <h5 class="text">Made with ❤️ By Rishabh </h5>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
